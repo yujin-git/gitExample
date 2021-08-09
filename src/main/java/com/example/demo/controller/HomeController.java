@@ -20,6 +20,7 @@ public class HomeController {
     @GetMapping("/hello")
     public String home(@RequestParam("msg") String msg, Model model) {
         model.addAttribute("msg", msg);
+        model.addAttribute("hello", "hello");
         return "home";
     }
     
